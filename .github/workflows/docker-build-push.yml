@@ -23,7 +23,7 @@ jobs:
 
       - name: Build images with Docker Compose
         run: |
-          docker-compose -f compose.yaml build
+          docker compose -f compose.yaml build
 
       - name: Push frontend image
         run: |
