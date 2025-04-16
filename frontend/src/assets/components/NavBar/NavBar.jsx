@@ -39,7 +39,7 @@ export default function NavBar({ onLoginClick }) {
             <ul className="nav-list">
                 <NavLink to="/home">
                     <li id="home">
-                    ＨＯＭＥ
+                    ＨＯＭＥshakalaka
                     </li>
                 </NavLink>
                 <NavLink to="/cart">
