@@ -23,6 +23,7 @@ jobs:
 
       - name: Build images with Docker Compose
         run: |
+          cd dockCart
           docker compose -f ./compose.yml build
 
       - name: Push frontend image
