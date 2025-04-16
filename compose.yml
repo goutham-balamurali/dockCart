@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   web:
-    image: ${DOCKER_USERNAME}/lpucart-frontend
+    image: gouthambalu/lpucart-frontend
     depends_on:
       - api
     build: ./frontend
@@ -19,7 +19,7 @@ services:
           action: sync
 
   api:
-    image: ${DOCKER_USERNAME}/lpucart-backend
+    image: gouthambalu/lpucart-backend
     build: ./backend
     ports:
       - 4000:4000
