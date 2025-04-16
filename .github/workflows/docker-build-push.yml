@@ -21,14 +21,6 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
 
-      - name: List project directory structure
-        run: |
-          pwd
-          ls -la
-          ls -la backend
-          ls -la frontend
-
-
       - name: Build images with Docker Compose
         run: |
           docker compose -f ./compose.yml build
